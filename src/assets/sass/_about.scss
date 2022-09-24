@@ -1,0 +1,135 @@
+.about-page{
+    position: relative;
+    overflow: hidden;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .head-part{
+        font-family: 'Raleway',sans-serif;
+        margin-bottom: 50px;
+        h1{
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            color:#e211bf;
+
+            span{
+                color: antiquewhite;
+            }
+        }
+        h3{
+         color: azure;
+         font-style: italic;
+         font-size: 1.2rem;
+         text-transform:lowercase;
+        }
+    }
+
+    .image-part{
+        margin-bottom: 20px;
+        .image{
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            border-radius: 0 70px 0 70px;
+            border: 5px solid #e211bf;
+            border-left: none;
+            border-right: none;
+            transition: all 2s ease;
+            transform: scale(1);
+            img{
+                width: 100%;
+                // border-radius: 0 70px 0 70px;
+                 border: 5px solid #e211bf;
+                 border-left: none;
+                 border-right: none;
+                 transition: all 2s ease;
+                 
+                 &:hover{
+                    transition: all 2s;
+                    transform: scale(1.1);
+                    filter: brightness(50%);
+                    }
+                }
+                
+                
+        }
+    }
+
+    .right-part{
+        backdrop-filter:blur(30px);
+        padding: 5px;
+        color: white;
+        
+       
+
+        .list-one,.list-two{
+            ul{
+                list-style: none;
+                font-size: 1rem;
+                padding: 0;
+                
+                
+                li{
+                    
+                    
+                        padding-bottom: 20px;
+                        font-family: 'Raleway',sans-serif;
+                     span{
+                        color: #e211bf;
+                        margin-right: 5px;
+                        font-weight: 600;
+
+
+ 
+
+
+                     
+
+                    }
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+
+
+
+
+
+
+            }
+        }
+        
+    }
+    .cv{
+        border: 2px solid #e211bf;
+        display: inline-flex;
+        border-radius: 30px;
+        padding: 15px 30px;
+        transition: all 2s;
+
+        &:hover{
+            background-color: #e211bf;
+            transition: all 2s;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+
+            
+
+            i{
+                margin-right: 5px;
+
+            }
+        }
+    }
+}

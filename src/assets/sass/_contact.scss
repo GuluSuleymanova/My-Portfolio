@@ -1,0 +1,200 @@
+.contact-page{
+    position: relative !important;
+    z-index: 15 !important;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    // height: 100vh;
+    align-items: center;
+   // max-height: 100%;
+    // background-color: red !important;
+
+    .head-part{
+        font-family: 'Raleway',sans-serif;
+        margin-bottom: 40px;
+        h1{
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            color:#e211bf;
+
+            span{
+                color: antiquewhite;
+            }
+        }
+        h3{
+         color: azure;
+         font-style: italic;
+         font-size: 1.2rem;
+         text-transform:lowercase;
+        }
+    }
+
+    .left-info{
+        backdrop-filter: blur(15px);
+        padding: 15px;
+
+        h3{
+            color: rgb(179, 177, 177);
+            font-size: 1.2rem;
+            font-weight: 400;
+            font-family: 'Raleway',sans-serif;
+        }
+
+        p{
+            color: white;
+
+            i{
+                color: #e211bf;
+            }
+        }
+
+        .social-icon{
+            display: flex;
+
+            a{
+                text-decoration: none;
+            }
+            
+            i{
+                color: white;
+                border-radius: 100%;
+                border: 1px solid #e211bf;
+                margin-right: 20px;
+                font-size: 1.2rem;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 2s all;           
+
+
+                &:hover{
+                    background-color: #e211bf;
+                    border-color: white;
+                    box-shadow: 0 0 3px white,
+                                0 0 6px white,
+                                0 0 9px white,
+                                0 0 12px white,;
+                     transition: 2s all;           
+                    
+                }
+                
+
+            }
+        }
+    }
+
+    .form-group{
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-bottom: 30px;
+
+        i{
+            color: #eee;
+            //font-size: 1.3rem;
+            position: absolute;
+            left: 36px;
+            top: 15px;
+            font-size: 16px;
+            //opacity: .3;
+        }
+
+        input{
+            background: rgb(108, 103, 103);
+            border: 1px solid #444;
+            color: #fff;
+            height: 46px;
+            padding-left: 49px;
+            border-radius: 30px;
+            outline: none;
+            box-shadow: none !important;
+            font-size: 14px;
+            text-transform: uppercase;
+
+            &::placeholder{
+                color: #fff;
+                opacity: 0.5;
+            }
+            &:focus{
+                background-color: #444;
+                border-color: #eee;
+            }
+            
+        }
+        textarea{
+            height: 130px;
+            padding: 12px 0 15px 49px;
+            background: rgb(108, 103, 103);
+            border: 1px solid #444;
+            color: #fff;
+            outline: none;
+            box-shadow: none !important;
+            font-size: 14px;
+            text-transform: uppercase;
+            border-radius: 30px;
+
+            &::placeholder{
+                color: #fff;
+                opacity: 0.5;
+            }
+            &:focus{
+                background-color: #444;
+                border-color: #eee;
+            }
+        }
+    }
+
+    .submit-form{
+        button{
+            background-color: #e211bf;
+            box-shadow: none !important;
+            border-radius: 26px;
+            font-weight: 500;
+            height: 46px;
+            // line-height: 46px;
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #fff;
+            padding: 0 33px;
+            outline: none !important;
+            overflow: hidden;
+            position: relative;
+            font-family: 'Raleway', sans-serif;
+            letter-spacing: .5px;
+            border: 0;
+            text-align: center;
+            &:hover{
+                color: white;
+                transition: all 1s;
+
+            }
+
+            &:hover::before{
+                width: 180%;
+                color: white;
+                transition: all 1s;
+
+            }
+
+            &::before{
+                position: absolute;
+                content: "";
+                top: 0;
+                height: 102%;
+                left: -25%;
+                width: 0%;
+                background-color: #555;
+                transform: skew(-22deg);
+                transition: all 1s;
+                z-index: -1;
+            }
+
+            i{
+                padding-right: 11px;
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+
+.header{
+    position: relative;
+    z-index: 4;
+    
+}
+
+.navbar{
+    background-color: transparent !important;
+    color: black !important;
+
+    .navbar-brand{
+        
+        font-size: 50px;
+        font-style: italic;
+        font-family:  'Fleur De Leah', cursive;
+        font-weight: 600;
+
+
+        span:nth-child(1){
+            color: #e211bf;
+            
+            
+       }
+        // letter-spacing: 1px;
+
+        span:nth-child(2){
+            color: #dfc4e6;
+           
+             text-shadow:  0 0 10px #d6d2d2,
+                      0 0 20px #786f6f,
+                      
+             }
+
+    }
+
+    .navbar-toggler{
+        color: #3aadff !important;
+        background-color: white !important;
+
+    }
+
+    .nav-item{
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin-right: 20px;
+        font-family: 'Raleway', sans-serif;
+
+        &::after{
+            
+                content: "";
+                display: block;
+                height: 3px;
+                width: 0;
+                background: transparent;
+                transition: width 0.7s ease, background-color 0.5s ease;
+              }
+              
+              &:hover:after {
+                width: 100%;
+                background: rgb(214, 42, 217);
+              }
+              
+             .nav-link{
+                color: antiquewhite;
+             }
+             }
+    
+}

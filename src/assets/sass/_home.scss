@@ -1,0 +1,108 @@
+.home-page{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    min-height: 80vh;
+
+    .row{
+        flex-wrap: wrap-reverse;
+    }
+    
+
+    .image-part{
+        margin-bottom: 20px;
+        .image{
+            //width: 400px;
+            //height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            border-radius: 0 70px 0 70px;
+            //border: 5px solid #ffc33c;
+            border-left: none;
+            border-right: none;
+            transition: all 2s ease;
+            transform: scale(1);
+            overflow: hidden;
+            img{
+                width: 100%;
+                border-radius: 0 70px 0 70px;
+                border: 5px solid #ffc33c;
+                 border-left: none;
+                 border-right: none;
+                 transition: all 2s ease;
+                 animation: myfirst 5s linear 2s infinite alternate;
+                 &:hover{
+                    transition: all 2s;
+                    transform: scale(1.1);
+                    filter: brightness(50%);
+                    }
+                }
+                
+                
+        }
+    }
+    @keyframes myfirst {
+        0%   {border-color: #ffc33c;}
+        
+        50%  {border-color:blue;}
+        
+        100% {border-color:#e211bf;}
+      
+
+       }
+
+       .info-part{
+        color: white;
+        font-family: 'Raleway',sans-serif;
+        backdrop-filter: blur(15px);
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+
+        p{
+            margin-bottom: 20px;
+        }
+
+
+        .button-part{
+
+            button{
+                border-radius: 30px;
+                border: 1px solid#e211bf ;
+                font-size: 1.2rem;
+                margin-right: 50px;
+                padding: 10px 25px;
+                background: none;
+                outline: none;
+                color: #e211bf;
+                transition: all 2s;
+
+
+                &:hover{
+                    background-color: #e211bf;
+                    border-color: white;
+                    transition: all 2s;
+                    color: white;
+                }
+
+
+            }
+            .one-btn{
+                color: white;
+                margin-bottom: 20px;
+                background-color: #e211bf;
+                border-color: white;
+                transition: all 2s;
+
+                &:hover{
+                    background-color: #444 !important;
+                    transition: all 2s;
+                }
+            }
+        }
+       }
+}

@@ -10,12 +10,17 @@
 
 .main-content{
     position: relative;
-    z-index: 999999999999;
+    z-index: 1111;
     width: 100% !important;
     height: 100% !important;
     min-height: 100vh !important;
-    background-color: rgb(58, 60, 61);
+    background-color: rgb(13, 4, 45);
     color: #655965;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
 
 

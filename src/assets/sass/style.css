@@ -1,4 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap");
+.issticky {
+  position: fixed !important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999 !important;
+  background-color: #1e1760;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  -webkit-animation: fadeIn 1s ease-in both;
+          animation: fadeIn 1s ease-in both;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
 .header {
   position: relative;
   z-index: 4;
@@ -17,12 +61,11 @@
 }
 
 .navbar .navbar-brand span:nth-child(1) {
-  color: #e211bf;
+  color: #741aac;
 }
 
 .navbar .navbar-brand span:nth-child(2) {
   color: #dfc4e6;
-  text-shadow: 0 0 10px #d6d2d2, 0 0 20px #786f6f;
 }
 
 .navbar .navbar-toggler {
@@ -59,7 +102,7 @@
 .contact-page {
   position: relative !important;
   z-index: 15 !important;
-  padding-top: 20px;
+  padding: 100px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,7 +123,7 @@
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 600;
-  color: #e211bf;
+  color: #741aac;
 }
 
 .contact-page .head-part h1 span {
@@ -112,7 +155,7 @@
 }
 
 .contact-page .left-info p i {
-  color: #e211bf;
+  color: #741aac;
 }
 
 .contact-page .left-info .social-icon {
@@ -128,7 +171,7 @@
 .contact-page .left-info .social-icon i {
   color: white;
   border-radius: 100%;
-  border: 1px solid #e211bf;
+  border: 1px solid #741aac;
   margin-right: 20px;
   font-size: 1.2rem;
   width: 40px;
@@ -147,7 +190,7 @@
 }
 
 .contact-page .left-info .social-icon i:hover {
-  background-color: #e211bf;
+  background-color: #741aac;
   border-color: white;
   -webkit-box-shadow: 0 0 3px white, 0 0 6px white, 0 0 9px white, 0 0 12px white;
           box-shadow: 0 0 3px white, 0 0 6px white, 0 0 9px white, 0 0 12px white;
@@ -253,7 +296,7 @@
 }
 
 .contact-page .submit-form button {
-  background-color: #e211bf;
+  background-color: #741aac;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   border-radius: 26px;
@@ -315,7 +358,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 30px;
+  padding-top: 50px;
   min-height: 80vh;
 }
 
@@ -352,7 +395,7 @@
 .home-page .image-part .image img {
   width: 100%;
   border-radius: 0 70px 0 70px;
-  border: 5px solid #ffc33c;
+  border: 5px solid #bc18d9;
   border-left: none;
   border-right: none;
   -webkit-transition: all 2s ease;
@@ -361,18 +404,9 @@
           animation: myfirst 5s linear 2s infinite alternate;
 }
 
-.home-page .image-part .image img:hover {
-  -webkit-transition: all 2s;
-  transition: all 2s;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
-}
-
 @-webkit-keyframes myfirst {
   0% {
-    border-color: #ffc33c;
+    border-color: #e23cff;
   }
   50% {
     border-color: blue;
@@ -384,7 +418,7 @@
 
 @keyframes myfirst {
   0% {
-    border-color: #ffc33c;
+    border-color: #e23cff;
   }
   50% {
     border-color: blue;
@@ -410,19 +444,19 @@
 
 .home-page .info-part .button-part button {
   border-radius: 30px;
-  border: 1px solid #e211bf;
+  border: 1px solid #741aac;
   font-size: 1.2rem;
   margin-right: 50px;
   padding: 10px 25px;
   background: none;
   outline: none;
-  color: #e211bf;
+  color: #741aac;
   -webkit-transition: all 2s;
   transition: all 2s;
 }
 
 .home-page .info-part .button-part button:hover {
-  background-color: #e211bf;
+  background-color: #741aac;
   border-color: white;
   -webkit-transition: all 2s;
   transition: all 2s;
@@ -432,7 +466,7 @@
 .home-page .info-part .button-part .one-btn {
   color: white;
   margin-bottom: 20px;
-  background-color: #e211bf;
+  background-color: #741aac;
   border-color: white;
   -webkit-transition: all 2s;
   transition: all 2s;
@@ -447,7 +481,7 @@
 .about-page {
   position: relative;
   overflow: hidden;
-  padding-top: 30px;
+  padding-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -461,14 +495,14 @@
 
 .about-page .head-part {
   font-family: 'Raleway',sans-serif;
-  margin-bottom: 50px;
 }
 
 .about-page .head-part h1 {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 600;
-  color: #e211bf;
+  color: #741aac;
+  margin-bottom: 15px;
 }
 
 .about-page .head-part h1 span {
@@ -480,6 +514,7 @@
   font-style: italic;
   font-size: 1.2rem;
   text-transform: lowercase;
+  margin-bottom: 15px;
 }
 
 .about-page .image-part {
@@ -487,8 +522,8 @@
 }
 
 .about-page .image-part .image {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,7 +535,7 @@
           align-items: center;
   margin: auto;
   border-radius: 0 70px 0 70px;
-  border: 5px solid #e211bf;
+  border: 5px solid #741aac;
   border-left: none;
   border-right: none;
   -webkit-transition: all 2s ease;
@@ -511,7 +546,7 @@
 
 .about-page .image-part .image img {
   width: 100%;
-  border: 5px solid #e211bf;
+  border: 5px solid #741aac;
   border-left: none;
   border-right: none;
   -webkit-transition: all 2s ease;
@@ -546,7 +581,7 @@
 }
 
 .about-page .right-part .list-one ul li span, .about-page .right-part .list-two ul li span {
-  color: #e211bf;
+  color: #741aac;
   margin-right: 5px;
   font-weight: 600;
 }
@@ -557,7 +592,7 @@
 }
 
 .about-page .cv {
-  border: 2px solid #e211bf;
+  border: 2px solid #741aac;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -568,7 +603,7 @@
 }
 
 .about-page .cv:hover {
-  background-color: #e211bf;
+  background-color: #741aac;
   -webkit-transition: all 2s;
   transition: all 2s;
 }
@@ -585,7 +620,7 @@
 
 .portfolio-page {
   position: relative;
-  padding-top: 30px;
+  padding-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -595,13 +630,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow: hidden;
 }
 
 .portfolio-page .head-part {
   font-family: 'Raleway',sans-serif;
   margin-bottom: 40px;
-  text-shadow: 0 0 5px #7a7373, 0 0 8px #bdb0b0, 0 0 10px #9f9999, 0 0 13px #666464;
 }
 
 .portfolio-page .head-part h1 {
@@ -612,7 +645,7 @@
 }
 
 .portfolio-page .head-part h1 span {
-  color: #e211bf;
+  color: #741aac;
 }
 
 .portfolio-page .button-parts {
@@ -630,29 +663,30 @@
 }
 
 .portfolio-page .button-parts button {
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
-  border: 1px solid #e211bf;
-  border-radius: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  text-transform: capitalize;
+  border: 1px solid #741aac;
+  border-radius: 0px;
   background-color: transparent;
   padding: 5px 15px;
   color: #fff;
-  font-weight: 600;
-  font-size: 1.5rem;
+  font-weight: 500;
+  font-size: 1.4rem;
   -webkit-transition: all 2s;
   transition: all 2s;
   margin: 5px;
+  letter-spacing: 1px;
 }
 
 .portfolio-page .button-parts button:hover {
-  background-color: #e211bf;
+  background-color: #741aac;
   color: #000;
   -webkit-transition: all 2s;
   transition: all 2s;
 }
 
 .portfolio-page .button-parts .active-tabs {
-  background-color: #e211bf;
+  background-color: #741aac;
   color: white;
   -webkit-transition: all 2s;
   transition: all 2s;
@@ -674,7 +708,7 @@
 
 .portfolio-page .image-portfolio {
   margin: 15px;
-  outline: 2px solid #e211bf;
+  outline: 2px solid #741aac;
   padding: 10px;
 }
 
@@ -719,7 +753,7 @@
   position: relative;
   height: 300px;
   width: 100%;
-  border: 1px solid #e211bf;
+  border: 1px solid #741aac;
   overflow: hidden;
 }
 
@@ -732,7 +766,7 @@
 .portfolio-page .image-portfolio .image a img {
   width: 100%;
   height: 100%;
-  border: 1px solid #e211bf;
+  border: 1px solid #741aac;
 }
 
 @media only screen and (max-width: 768px) {
@@ -747,11 +781,16 @@
 
 .main-content {
   position: relative;
-  z-index: 999999999999;
+  z-index: 1111;
   width: 100% !important;
   height: 100% !important;
   min-height: 100vh !important;
-  background-color: #3a3c3d;
+  background-color: #0d042d;
   color: #655965;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

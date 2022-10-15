@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import Header from '../components/Header/Header'
 import About from '../components/Pages/About'
 import Contact from '../components/Pages/Contact'
@@ -12,16 +12,20 @@ import Particle from '../components/Particles/Particle'
 const AppRouter = () => {
   return (
     <div className="main-content">
-    <Router>
+   
        <Particle/> 
       <Header/>
-      <Routes>
+      <Home/>
+      <About/>
+      <Portfolio/>
+      <Contact/>
+      {/* <Routes>
       <Route end  path='/' element={<Home/>}></Route>
       <Route path='about' element={<About/>}></Route>
       <Route path='portfolio' element={<Portfolio/>}></Route>
       <Route path='contact' element={<Contact/>}></Route>
-      </Routes>
-    </Router>
+      </Routes> */}
+    
     </div>
   )
 }

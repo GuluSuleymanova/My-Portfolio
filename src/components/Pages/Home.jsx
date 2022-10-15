@@ -1,5 +1,5 @@
 import React from 'react'
-import profile from '../../assets/images/profile.jpg'
+import profile from '../../assets/images/home1.png'
 import { Typewriter } from 'react-simple-typewriter'
 import { Link } from 'react-router-dom'
 
@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
-    <div className='home-page'>
+    <div className='home-page' id='home'>
       <div className="container">
         <div className="row d-flex justify-content-center align-items-center">
 
@@ -16,7 +16,7 @@ const Home = () => {
             <div className="text-part">
               <h2>Hi There !</h2>
             <span> I'm{' '}
-        <h2 style={{ color: '#e211bf', fontWeight: '400' }}>
+        <h2 style={{ color: '#741aac', fontWeight: '400' }}>
           {/* Style will be inherited from the parent element */}
           <Typewriter
             words={['Gulu Suleymanova', 'Junior Frontend Developer',]}
@@ -34,8 +34,8 @@ const Home = () => {
             <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ab, quam non laboriosam recusandae qui a praesentium eligendi voluptatum, earum consequatur omnis consectetur quaerat unde vel facere quod cum culpa.</p>
            </div>
            <div className="button-part">
-            <Link to='/about'><button className='one-btn'><i className="fa-solid fa-user"></i> More About Me</button></Link>
-            <Link to ='/portfolio'><button ><i className="fa-solid fa-briefcase"></i> Portfolio</button></Link>
+            <a href='#about'><button className='one-btn'><i className="fa-solid fa-user"></i> More About Me</button></a>
+            <a href ='#portfolio'><button ><i className="fa-solid fa-briefcase"></i> Portfolio</button></a>
            </div>
            </div>
 

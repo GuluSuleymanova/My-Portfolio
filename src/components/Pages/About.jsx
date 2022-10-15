@@ -1,5 +1,5 @@
 import React from 'react'
-import profile from '../../assets/images/profile.jpg'
+import profile from '../../assets/images/about.jpg'
 import resume from '../../assets/Süleymanova Gülü.CV.pdf'
 import aboutdata from '../data/aboutdata'
 import Aboutitem from './Aboutitem'
@@ -11,7 +11,7 @@ const About = () => {
   
   return (
     
-    <div className='about-page'>
+    <div className='about-page' id='about'>
       <div className="container">
         <div className="head-part">
         <div className="head-part text-center">
@@ -31,7 +31,8 @@ const About = () => {
                     <div className="row">
                       <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 col-12">
                         <div className="list-one">
-                         {aboutdata.leftside.map((item,index)=>{
+                         {
+                         aboutdata.leftside.map((item,index)=>{
                           return(
                             <Aboutitem
                             title={item.title}
@@ -40,7 +41,8 @@ const About = () => {
                             key={index}
                             />
                           )
-                         })}
+                         })
+                         }
 
                          
                           

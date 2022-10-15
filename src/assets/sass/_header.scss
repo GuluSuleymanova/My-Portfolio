@@ -1,8 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
 
+
+.issticky{
+    position: fixed !important;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999 !important;
+    background-color: rgb(30, 23, 96);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    animation:fadeIn 1s ease-in both;
+
+
+    
+
+
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+        transition: all 1s;
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
 .header{
     position: relative;
     z-index: 4;
+    // margin-bottom: 60px;
+    
     
 }
 
@@ -19,7 +52,7 @@
 
 
         span:nth-child(1){
-            color: #e211bf;
+            color: #741aac;
             
             
        }
@@ -28,10 +61,10 @@
         span:nth-child(2){
             color: #dfc4e6;
            
-             text-shadow:  0 0 10px #d6d2d2,
-                      0 0 20px #786f6f,
+            //  text-shadow:  0 0 10px #d6d2d2,
+            //           0 0 20px #786f6f,
                       
-             }
+              }
 
     }
 

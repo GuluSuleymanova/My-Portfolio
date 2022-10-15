@@ -1,7 +1,9 @@
+
+
 .contact-page{
     position: relative !important;
     z-index: 15 !important;
-    padding-top: 20px;
+    padding: 100px 0;
     display: flex;
     justify-content: center;
     // height: 100vh;
@@ -16,7 +18,7 @@
             font-size: 2rem;
             text-transform: uppercase;
             font-weight: 600;
-            color:#e211bf;
+            color:#741aac;
 
             span{
                 color: antiquewhite;
@@ -45,7 +47,7 @@
             color: white;
 
             i{
-                color: #e211bf;
+                color: #741aac;
             }
         }
 
@@ -59,7 +61,7 @@
             i{
                 color: white;
                 border-radius: 100%;
-                border: 1px solid #e211bf;
+                border: 1px solid #741aac;
                 margin-right: 20px;
                 font-size: 1.2rem;
                 width: 40px;
@@ -71,7 +73,7 @@
 
 
                 &:hover{
-                    background-color: #e211bf;
+                    background-color: #741aac;
                     border-color: white;
                     box-shadow: 0 0 3px white,
                                 0 0 6px white,
@@ -149,7 +151,7 @@
 
     .submit-form{
         button{
-            background-color: #e211bf;
+            background-color: #741aac;
             box-shadow: none !important;
             border-radius: 26px;
             font-weight: 500;

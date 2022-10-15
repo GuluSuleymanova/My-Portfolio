@@ -9,10 +9,10 @@ const Contact = () => {
       e.preventDefault();
   
       emailjs.sendForm(
-        "service_y04a4yf",
-       'template_59ztiin', 
+        "service_sna2aki",
+        'template_bb78et5', 
         form.current, 
-       'qIaLyS3lNkUu1vQ56'
+       'rIgbOjL-y0rxOEu6Q'
        )
         .then((result) => {
             console.log(result.text);
@@ -23,7 +23,7 @@ const Contact = () => {
     };
 
     return (
-        <div className='contact-page'>
+        <div className='contact-page' id='contact'>
             <div className="container">
                 <div className="head-part text-center">
                     <h1><span>Get </span>in Touch</h1>

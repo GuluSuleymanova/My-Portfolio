@@ -1,19 +1,24 @@
+
+
 .about-page{
     position: relative;
     overflow: hidden;
-    padding-top: 30px;
+    padding-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 
     .head-part{
         font-family: 'Raleway',sans-serif;
-        margin-bottom: 50px;
+
+        //margin-bottom: 50px;
         h1{
             font-size: 2rem;
             text-transform: uppercase;
             font-weight: 600;
-            color:#e211bf;
+            color:#741aac;
+            margin-bottom: 15px;
 
             span{
                 color: antiquewhite;
@@ -24,20 +29,21 @@
          font-style: italic;
          font-size: 1.2rem;
          text-transform:lowercase;
+         margin-bottom: 15px;
         }
     }
 
     .image-part{
         margin-bottom: 20px;
         .image{
-            width: 300px;
-            height: 300px;
+            width: 350px;
+            height: 350px;
             display: flex;
             justify-content: center;
             align-items: center;
             margin: auto;
             border-radius: 0 70px 0 70px;
-            border: 5px solid #e211bf;
+            border: 5px solid #741aac;
             border-left: none;
             border-right: none;
             transition: all 2s ease;
@@ -45,7 +51,7 @@
             img{
                 width: 100%;
                 // border-radius: 0 70px 0 70px;
-                 border: 5px solid #e211bf;
+                 border: 5px solid #741aac;
                  border-left: none;
                  border-right: none;
                  transition: all 2s ease;
@@ -81,7 +87,7 @@
                         padding-bottom: 20px;
                         font-family: 'Raleway',sans-serif;
                      span{
-                        color: #e211bf;
+                        color: #741aac;
                         margin-right: 5px;
                         font-weight: 600;
 
@@ -108,14 +114,14 @@
         
     }
     .cv{
-        border: 2px solid #e211bf;
+        border: 2px solid #741aac;
         display: inline-flex;
         border-radius: 30px;
         padding: 15px 30px;
         transition: all 2s;
 
         &:hover{
-            background-color: #e211bf;
+            background-color: #741aac;
             transition: all 2s;
         }
 

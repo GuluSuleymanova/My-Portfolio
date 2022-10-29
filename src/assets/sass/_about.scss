@@ -42,19 +42,32 @@
             justify-content: center;
             align-items: center;
             margin: auto;
-            border-radius: 0 70px 0 70px;
+            border-radius:32% 68% 22% 78% / 56% 34% 66% 44% ;
             border: 5px solid #741aac;
-            border-left: none;
-            border-right: none;
+            padding: 30px;
+            animation: about2 5s ease 0s infinite normal running;
+
+
+            // border-left: none;
+            // border-right: none;
             transition: all 2s ease;
             transform: scale(1);
+            
             img{
+
                 width: 100%;
                 // border-radius: 0 70px 0 70px;
+                 border-radius:67% 33% 57% 43% / 55% 64% 36% 45% ;
+                 //box-shadow: 10px 30px 20px #eee;
+
+                 
+
                  border: 5px solid #741aac;
-                 border-left: none;
-                 border-right: none;
+                //  border-left: none;
+                //  border-right: none;
                  transition: all 2s ease;
+                animation: about 5s ease 0s infinite normal running;
+
                  
                  &:hover{
                     transition: all 2s;
@@ -66,6 +79,37 @@
                 
         }
     }
+
+    @keyframes about {
+        0% {
+                transform: rotate(0deg) translate(-3px,-3px)
+        }
+
+        50% {
+                transform: rotate(0deg) translate(2px,2px)
+        }
+
+        to {
+                transform: rotate(0deg) translate(-3px,-3px)
+        }
+        
+    }
+
+    @keyframes about2 {
+        0% {
+                transform: rotate(2deg) translate(2px,2px)
+        }
+
+        50% {
+                transform: rotate(-2deg) translate(-2px,-2px)
+        }
+
+        to {
+                transform: rotate(2deg) translate(2px,2px)
+        }
+        
+    }
+
 
     .right-part{
         backdrop-filter:blur(30px);

@@ -1,6 +1,6 @@
 import React from 'react'
 import profile from '../../assets/images/about.jpg'
-import resume from '../../assets/Süleymanova Gülü.CV.pdf'
+import resume from '../../assets/Gülü_Süleymanova_Resume.pdf'
 import aboutdata from '../data/aboutdata'
 import Aboutitem from './Aboutitem'
 

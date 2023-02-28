@@ -19,8 +19,12 @@ const Contact = () => {
             alert("Your message send:)");
         }, (error) => {
             console.log(error.text);
+
         });
+
+        e.target.reset();
     };
+
 
     return (
         <div className='contact-page' id='contact'>
@@ -49,7 +53,7 @@ const Contact = () => {
                                 <div className="social-icon">
                                     <a href="https://facebook.com/gulusuleymanova19" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f" aria-hidden="true"></i></a>
                                     <a href="https://github.com/GuluSuleymanova" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
-                                    <a href="https://www.linkedin.com/in/gülü-süleymanova19" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="https://www.linkedin.com/in/GuluSuleymanova" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin-in"></i></a>
                                 </div>
                                 
                             </div>
